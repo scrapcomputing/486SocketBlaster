@@ -20,7 +20,9 @@ that can be soldered to the 486SocketBlaster board.
 This board is tricky to solder, but can be done with a standard soldering iron.
 The best way to solder the headers is to start with the innermost one and work
 outwards in a spiral manner alternating between the top and bottom side as
-needed. This way you only work on the outside.
+needed (see image below). This way you only work on the outside.
+
+<img src='img/AssemblyInstructions.png' alt='Assembly Instructions' height=240>
 
 A desoldering gun may be useful when you accidentally clog up other holes.
 Also using flux makes it easier.
@@ -64,6 +66,8 @@ SMD Capacitors                  | 4   | 0.1uF SMD 1206
 Throughole Capacitor            | 1   | 1uF ceramic through-hole capacitor
 3-pin header 2.54mm             | 1   | Header used for selecting the CPU Multiplier
 Jumper 2.54mm                   | 1   | A jumper to for the 3-pin header
+
+Please note that the headers are a very tight fit. So please make sure that you get headers of the correct pin diameter.
 
 The capacitors seem to be optional, at least with the limited testing that I
 have done so far. Depending on they quality of the buck converter they may
