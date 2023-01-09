@@ -62,8 +62,8 @@ Item                            | ##  | Description
 mini buck converter             | 1   | We support two common sizes: 22x17mm and 18x12mm. These usually have chips like MP1584, MP2307 and others
 40pin SIP pin header (male)     | 5   | Single-row round pin 2.54mm pitch (male). Socket pin diameter: 0.5mm, PCB pin diameter: 0.6mm. (see photo below)
 40pin SIP socket header (female)| 5   | Single-row round pin sockets, 2.54mm pitch. PCB pin diameter: 0.5mm. (see photo below) 
-SMD Capacitors                  | 4   | 0.1uF SMD 1206
-Throughole Capacitor            | 1   | 1uF ceramic through-hole capacitor
+SMD Capacitors                  | 4   | 10uF SMD 1206
+Throughole Capacitor            | 1   | 10uF ceramic through-hole capacitor
 3-pin header 2.54mm             | 1   | Header used for selecting the CPU Multiplier
 Jumper 2.54mm                   | 1   | A jumper to for the 3-pin header
 
