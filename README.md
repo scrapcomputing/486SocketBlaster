@@ -12,25 +12,30 @@ work with 5-volt CPUs. This basically converts any 3-volt CPU to an "Overdrive".
 # How does it work ?
 
 It is really simple: All CPU pins are passed through to the motherboard socket,
-except the Vcc ones. Those are connected to the output of a mini buck converter
+except for the Vcc. Those are connected to the output of a mini buck converter
 that can be soldered to the 486SocketBlaster board.
 
 # Soldering/Assembly Instructions
 
-This board is tricky to solder, but can be done with a standard soldering iron.
+This board is not the easiest thing to solder, but can be done with a standard
+soldering iron and some patience.
 The best way to solder the headers is to start with the innermost one and work
 outwards in a spiral manner alternating between the top and bottom side as
-needed (see image below). This way you only work on the outside.
+needed (see image below). This way you only work on the outside and can easily
+reach all the pins.
 
 <img src='img/AssemblyInstructions.png' alt='Assembly Instructions' height=240>
 
-A desoldering gun may be useful when you accidentally clog up other holes.
-Also using flux makes it easier.
+A desoldering gun may be useful when you accidentally clog up other holes. But
+it is probably best to be very careful and avoid clogging them in the first
+place. Also using flux makes it easier.
 
-Please make sure you check for continuity before you add another row of headers
-on the same side, because the new row will permanently block your access to the
-solder joints! Desoldering a header is *extremely* difficult even with a
-desoldering gun due to the tight hole tolerances.
+Please make sure you check the solder joints (also check for continuity) before
+you add another row of headers on the same side, because the new row will
+permanently block your access to the solder joints!
+Desoldering a header is almost impossible even with a desoldering gun due to the
+very tight hole tolerances.
+So it has to be soldered correctly from the first try.
 
 # Voltage regulator
 
@@ -51,9 +56,11 @@ Improper assembly/settings/use can damage both your precious motherboard and you
 
 # Bonus Features
 
-- Header for an external voltage regulator, or for monitoring the voltages.
-- Header for selecting/overriding the CPU multiplier. This may be useful for
-reducing the multiplier of a DX4 or Am5x86 CPU.
+- External Power Header. This can be used either for monitoring the CPU voltage,
+or for providing power externally, either with an external power supply or an
+external voltage regulator.
+- CPUMUL Header for selecting/overriding the CPU multiplier. This may be useful
+for reducing the multiplier of a DX4 to 2x (66MHz) or Am5x86 to 3x (100MHz).
 
 # Bill of materials
 
@@ -63,15 +70,16 @@ mini buck converter             | 1   | We support two common sizes: 22x17mm and
 40pin SIP pin header (male)     | 5   | Single-row round pin 2.54mm pitch (male). Socket pin diameter: 0.5mm, PCB pin diameter: 0.6mm. (see photo below)
 40pin SIP socket header (female)| 5   | Single-row round pin sockets, 2.54mm pitch. PCB pin diameter: 0.5mm. (see photo below) 
 SMD Capacitors                  | 4   | 10uF SMD 1206
-Throughole Capacitor            | 1   | 10uF ceramic through-hole capacitor
-3-pin header 2.54mm             | 1   | Header used for selecting the CPU Multiplier
-Jumper 2.54mm                   | 1   | A jumper to for the 3-pin header
+Through-hole Capacitor          | 1   | 10uF ceramic through-hole capacitor
+3-pin header 2.54mm pitch       | 1   | Header used for selecting the CPU Multiplier (CPUMUL)
+Jumper 2.54mm pitch             | 1   | A jumper to for the CPUMUL header
 
 Please note that the headers are a very tight fit. So please make sure that you get headers of the correct pin diameter.
 
-The capacitors seem to be optional, at least with the limited testing that I
-have done so far. Depending on they quality of the buck converter they may
-or may not improve stability.
+With the limited testing I have done so far, it seems that you need at least
+one 10uF through-hole ceramic capacitor, otherwise the voltage ripple is too
+high and the system can become unstable with a DX4 @ 100MHz, using a cheap
+MP1584-based buck converter.
 
 ![headers](img/headers.jpg)
 
