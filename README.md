@@ -83,3 +83,5 @@ MP1584-based buck converter.
 
 ![headers](img/headers.jpg)
 
+# List of other similar 486 adapter projects
+- With an onboard voltage regulator: https://github.com/LimeProgramming/486SocketBlaster/tree/4-layer-onboard-regulator
