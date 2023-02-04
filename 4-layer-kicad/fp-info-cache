@@ -1,4 +1,4 @@
-20256180477557138
+20257863500459726
 486SocketBlaster
 486_168pga_pins
 
@@ -76,6 +76,13 @@ capacitor
 0
 2
 2
+486SocketBlaster
+tinySMDpot
+Potentiometer, horizontal, Bourns 3214J, https://www.bourns.com/docs/Product-Datasheets/3214.pdf
+Potentiometer horizontal Bourns 3214J
+0
+3
+3
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
