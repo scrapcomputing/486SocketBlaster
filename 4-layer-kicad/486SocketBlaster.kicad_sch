@@ -11754,7 +11754,7 @@
     (in_bom yes) (on_board yes)
     (uuid 26999f04-d342-4b3a-88f4-2c5731d20c32)
     (property "Reference" "R2" (id 0) (at 209.55 157.48 90))
-    (property "Value" "68K" (id 1) (at 212.09 157.48 90)
+    (property "Value" "68.1K" (id 1) (at 212.09 157.48 90)
       (effects (font (size 1 1)))
     )
     (property "Footprint" "486SocketBlaster:R_0603_1608Metric" (id 2) (at 213.868 157.48 90)
@@ -11766,7 +11766,7 @@
     (property "JLCPCB for set" "C4216" (id 4) (at 212.09 157.48 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLCPCB for ADJ" "" (id 5) (at 212.09 157.48 90)
+    (property "JLCPCB for ADJ" "C25976" (id 5) (at 212.09 157.48 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Set valie" "33.2K" (id 6) (at 212.09 157.48 90)
@@ -12171,7 +12171,7 @@
       (reference "R1") (unit 1) (value "10K") (footprint "486SocketBlaster:R_0603_1608Metric")
     )
     (path "/26999f04-d342-4b3a-88f4-2c5731d20c32"
-      (reference "R2") (unit 1) (value "68K") (footprint "486SocketBlaster:R_0603_1608Metric")
+      (reference "R2") (unit 1) (value "68.1K") (footprint "486SocketBlaster:R_0603_1608Metric")
     )
     (path "/fd390462-f858-4bcd-808a-4e3a47d7079c"
       (reference "R3") (unit 1) (value "10K") (footprint "486SocketBlaster:R_0603_1608Metric")
