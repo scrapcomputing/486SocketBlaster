@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "486SocketBlaster"
-Date "Jan 8 2023"
-Rev "0.3"
+Date "Feb 13 2023"
+Rev "0.4"
 Comp "ScrapComputing"
 Comment1 ""
 Comment2 ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 486:486 Bot1
+L 486SocketBlaster:486 Bot1
 U 1 1 63946169
 P 10400 9250
 F 0 "Bot1" H 9935 9906 50  0000 C CNN
@@ -489,7 +489,7 @@ Wire Wire Line
 Wire Wire Line
 	12500 9550 12500 8500
 $Comp
-L 486:486 Top1
+L 486SocketBlaster:486 Top1
 U 1 1 63948A0A
 P 10400 8200
 F 0 "Top1" H 9935 8856 50  0000 C CNN
@@ -859,7 +859,7 @@ Wire Wire Line
 Wire Wire Line
 	21650 7900 21650 9000
 $Comp
-L 486:VoltageRegulator U1
+L 486SocketBlaster:VoltageRegulator U1
 U 1 1 63BB2DD9
 P 18950 7650
 F 0 "U1" H 19137 7515 50  0000 C CNN
@@ -884,7 +884,7 @@ Wire Wire Line
 Wire Wire Line
 	18550 8600 18550 9900
 $Comp
-L 486:VoltageRegulator U3
+L 486SocketBlaster:VoltageRegulator U3
 U 1 1 63BCFF04
 P 18950 8200
 F 0 "U3" H 19137 8065 50  0000 C CNN

@@ -67,8 +67,8 @@ for reducing the multiplier of a DX4 to 2x (66MHz) or Am5x86 to 3x (100MHz).
 Item                            | ##  | Description
 --------------------------------|-----|--------------------------------------------------------
 mini buck converter             | 1   | We support two common sizes: 22x17mm and 18x12mm. These usually have chips like MP1584, MP2307 and others
-40pin SIP pin header (male)     | 5   | Single-row round pin 2.54mm pitch (male). Socket pin diameter: 0.5mm, PCB pin diameter: 0.6mm. (see photo below)
-40pin SIP socket header (female)| 5   | Single-row round pin sockets, 2.54mm pitch. PCB pin diameter: 0.5mm. (see photo below) 
+40pin SIP pin header (male)     | 5   | Single-row round pin 2.54mm pitch (male). Socket pin diameter: 0.50mm, PCB pin diameter: 0.60mm. (see photo below)
+40pin SIP socket header (female)| 5   | Single-row round pin sockets, 2.54mm pitch. PCB pin diameter: 0.55mm. (see photo below) 
 SMD Capacitors                  | 4   | 10uF SMD 1206
 Through-hole Capacitor          | 1   | 10uF ceramic through-hole capacitor
 3-pin header 2.54mm pitch       | 1   | Header used for selecting the CPU Multiplier (CPUMUL)
@@ -82,6 +82,11 @@ high and the system can become unstable with a DX4 @ 100MHz, using a cheap
 MP1584-based buck converter.
 
 ![headers](img/headers.jpg)
+
+# Changelist
+- Rev 0.4 : Larger holes for the female headers (0.62mm instead of 0.57mm). These should fit headers with 0.55mm pin diameter.
+- Rev 0.3 : Updates silk screen for larger capacitor values and fixes CPUMUL table.
+- Rev 0.2 : Fixes initial revision bugs.
 
 # List of other similar 486 adapter projects
 - With an onboard voltage regulator: https://github.com/LimeProgramming/486SocketBlaster/tree/4-layer-onboard-regulator
