@@ -45,9 +45,10 @@ buck converters, usually found using keywords like "mini buck converter".
 These are commonly rated at up to 3A of current. Given that 3-volt 486 CPUs are
 usually very efficient (the DX4-100 is rated at max 3.55/5.22W typical/max) such
 a regulator should be adequate in most cases.
+For best stability try to source a good quality part.
 
 If you are planning to overclock or to use a more power hungry CPU, please use
-an external regulation circuit.
+an external regulation circuit, or a *very* good quality buck converter.
 
 # WARNING!!!
 
@@ -73,6 +74,8 @@ SMD Capacitors                  | 4   | 10uF SMD 1206
 Through-hole Capacitor          | 1   | 10uF ceramic through-hole capacitor
 3-pin header 2.54mm pitch       | 1   | Header used for selecting the CPU Multiplier (CPUMUL)
 Jumper 2.54mm pitch             | 1   | A jumper to for the CPUMUL header
+
+Gerber files can be found in the releases: https://github.com/scrapcomputing/486SocketBlaster/releases
 
 Please note that the headers are a very tight fit. So please make sure that you get headers of the correct pin diameter.
 
