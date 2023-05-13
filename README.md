@@ -86,6 +86,12 @@ MP1584-based buck converter.
 
 ![headers](img/headers.jpg)
 
+# Videos featuring the 486 Socket Blaster
+- Original video with rev0.1 PCB (part 1): https://www.youtube.com/watch?v=n5qlx4qKbSE
+- Rev0.2 PCB and trying out smoothing caps (part 2): https://www.youtube.com/watch?v=7anzRWXtba0
+- Choosing capacitor values for a 5x86 (part 3): https://www.youtube.com/watch?v=CLPSJ0jOQsU
+- Detailed assembly instructions by Epictronics (rev 0.4 PCB): https://www.youtube.com/watch?v=vEpAoVE4KjU
+
 # Changelist
 - Rev 0.4 : Larger holes for the female headers (0.62mm instead of 0.57mm). These should fit headers with 0.55mm pin diameter.
 - Rev 0.3 : Updates silk screen for larger capacitor values and fixes CPUMUL table.
