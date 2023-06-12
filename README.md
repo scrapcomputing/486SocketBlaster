@@ -1,3 +1,5 @@
+# Go back to the main branch, [nothing to see here.]([https://github.com/scrapcomputing/486SocketBlaster](https://youtu.be/NuAKnbIr6TE))
+
 # 486SocketBlaster
 
 486SocketBlaster is a simple voltage adapter for 486 processors. It allows you
