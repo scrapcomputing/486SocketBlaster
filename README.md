@@ -1,6 +1,4 @@
-# Go back to the main branch
-
-[Theres nothing to see here.]([https://github.com/scrapcomputing/486SocketBlaster](https://youtu.be/NuAKnbIr6TE))
+# Go back to the main branch. [Theres nothing to see here.](https://youtu.be/NuAKnbIr6TE)
 
 # 486SocketBlaster
 
