@@ -47,21 +47,18 @@ usually very efficient (the DX4-100 is rated at max 3.55/5.22W typical/max) such
 a regulator should be adequate in most cases.
 For best stability try to source a good quality part.
 
-If you are planning to overclock or to use a more power hungry CPU, please use
-an external regulation circuit, or a *very* good quality buck converter.
+If you are planning to overclock or to use a more power hungry CPU, please use an external regulation circuit plugged in to the `ExtPwr` header, or use a *very* good quality mini buck converter.
 
 # WARNING!!!
 
 Please make sure you know what you are doing!
 Improper assembly/settings/use can damage both your precious motherboard and your precious CPU!
 
-# Bonus Features
+# Features
 
-- External Power Header. This can be used either for monitoring the CPU voltage,
-or for providing power externally, either with an external power supply or an
-external voltage regulator.
-- CPUMUL Header for selecting/overriding the CPU multiplier. This may be useful
-for reducing the multiplier of a DX4 to 2x (66MHz) or Am5x86 to 3x (100MHz).
+- External Power Header. This can be used either for monitoring the CPU voltage, or for providing power externally, either with an external power supply or an external voltage regulator.
+- CLKMUL Header for selecting/overriding the CPU multiplier. This controls CPU pin `R17`. 1-2 connects it to the motherboard socket pin and 2-3 connects it to ground. This reduces the multiplier of a DX4 to 2x (66MHz) and sets the multiplier of an Am5x86 to 4x (133MHz).
+- WB/WT Header for selecting/overriding Write-Back/Write-Through cache. This controls processor CPU pin `B13` (which is the `CLKMUL` pin in earlier 486 CPUs). 1-2 connects it to the motherboard socket pin, and 2-3 connects it to Vcc, which enables Write-Back.
 
 # Bill of materials
 
@@ -70,10 +67,10 @@ Item                            | ##  | Description
 mini buck converter             | 1   | We support two common sizes: 22x17mm and 18x12mm. These usually have chips like MP1584, MP2307 and others
 40pin SIP pin header (male)     | 5   | Single-row round pin 2.54mm pitch (male). Socket pin diameter: 0.50mm, PCB pin diameter: 0.60mm. (see photo below)
 40pin SIP socket header (female)| 5   | Single-row round pin sockets, 2.54mm pitch. PCB pin diameter: 0.55mm. (see photo below) 
-SMD Capacitors                  | 4   | 10uF SMD 1206
-Through-hole Capacitor          | 1   | 10uF ceramic through-hole capacitor
-3-pin header 2.54mm pitch       | 1   | Header used for selecting the CPU Multiplier (CPUMUL)
-Jumper 2.54mm pitch             | 1   | A jumper to for the CPUMUL header
+SMD Ceramic Capacitors          | 4   | 10uF SMD 1206, 6.3V or higher
+Through-hole Capacitor          | 1   | 10uF ceramic through-hole capacitor, 6.3V or higher
+3-pin header 2.54mm pitch       | 2   | (optional) Headers used for selecting the CPU Multiplier (CLKMUL) and Write-Back/Write-Through cache (WB/WT)
+Jumper 2.54mm pitch             | 2   | (optional) Jumpers for the CLKMUL and WB/WT headers
 
 Gerber files can be found in the releases: https://github.com/scrapcomputing/486SocketBlaster/releases
 
@@ -93,8 +90,9 @@ MP1584-based buck converter.
 - Detailed assembly instructions by Epictronics (rev 0.4 PCB): https://www.youtube.com/watch?v=vEpAoVE4KjU
 
 # Changelist
+- Rev 0.5 : Adds WB/WT header and fixes CLKMUL table silkscreen for am5x86.
 - Rev 0.4 : Larger holes for the female headers (0.62mm instead of 0.57mm). These should fit headers with 0.55mm pin diameter.
-- Rev 0.3 : Updates silk screen for larger capacitor values and fixes CPUMUL table.
+- Rev 0.3 : Updates silk screen for larger capacitor values and fixes CLKMUL table.
 - Rev 0.2 : Fixes initial revision bugs.
 
 # List of other similar 486 adapter projects

@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "486SocketBlaster"
-Date "Feb 13 2023"
-Rev "0.4"
+Date "2023-06-24"
+Rev "0.5"
 Comp "ScrapComputing"
 Comment1 ""
 Comment2 ""
@@ -66,8 +66,6 @@ Wire Wire Line
 	4200 8500 4200 9550
 Wire Wire Line
 	4400 9550 4400 8500
-Wire Wire Line
-	4500 8500 4500 9550
 Wire Wire Line
 	4600 8500 4600 9550
 Wire Wire Line
@@ -328,7 +326,7 @@ Wire Wire Line
 	4300 8500 4300 7900
 Connection ~ 4300 7900
 Wire Wire Line
-	4300 7900 5300 7900
+	4300 7900 4650 7900
 Wire Wire Line
 	2200 8900 2400 8900
 Connection ~ 2200 8900
@@ -612,7 +610,7 @@ Connection ~ 17400 8900
 Wire Wire Line
 	17200 8900 17200 9550
 Wire Wire Line
-	16300 9900 18550 9900
+	16300 9900 18400 9900
 Wire Wire Line
 	17400 8900 17400 9550
 Wire Wire Line
@@ -932,5 +930,61 @@ Wire Wire Line
 	18600 8750 18600 8200
 Connection ~ 18600 8750
 Wire Wire Line
-	18000 8900 18600 8900
+	18000 8900 18450 8900
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 649AC0AE
+P 4550 7300
+F 0 "J1" V 4514 7112 50  0000 R CNN
+F 1 "Conn_01x03" V 4423 7112 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 7300 50  0001 C CNN
+F 3 "~" H 4550 7300 50  0001 C CNN
+	1    4550 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 8500 4500 7700
+Wire Wire Line
+	4500 9550 4500 8750
+Wire Wire Line
+	4500 8750 4450 8750
+Wire Wire Line
+	4450 8750 4450 7500
+Wire Wire Line
+	4550 7500 4550 7700
+Wire Wire Line
+	4550 7700 4500 7700
+Wire Wire Line
+	4650 7500 4650 7900
+Connection ~ 4650 7900
+Wire Wire Line
+	4650 7900 5300 7900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 64A5E216
+P 18450 8900
+F 0 "#FLG0101" H 18450 8975 50  0001 C CNN
+F 1 "PWR_FLAG" H 18450 9073 50  0000 C CNN
+F 2 "" H 18450 8900 50  0001 C CNN
+F 3 "~" H 18450 8900 50  0001 C CNN
+	1    18450 8900
+	1    0    0    -1  
+$EndComp
+Connection ~ 18450 8900
+Wire Wire Line
+	18450 8900 18600 8900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 64A5F681
+P 18400 9900
+F 0 "#FLG0102" H 18400 9975 50  0001 C CNN
+F 1 "PWR_FLAG" H 18400 10073 50  0000 C CNN
+F 2 "" H 18400 9900 50  0001 C CNN
+F 3 "~" H 18400 9900 50  0001 C CNN
+	1    18400 9900
+	1    0    0    -1  
+$EndComp
+Connection ~ 18400 9900
+Wire Wire Line
+	18400 9900 18550 9900
 $EndSCHEMATC
