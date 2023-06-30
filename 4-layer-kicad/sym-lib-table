@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "486SocketBlaster")(type "KiCad")(uri "${KIPRJMOD}/486SocketBlaster.symbols/486sb.kicad_sym")(options "")(descr ""))
+)
